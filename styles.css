@@ -1,0 +1,123 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    background-color: black;
+}
+.header{
+    background-color: hsla(0, 0%, 0%);
+    color: whitesmoke;
+    display: flex;
+    height: auto;
+    padding: 10px;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.elements{
+    margin-right: 20px;
+
+    
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    float: right;
+    list-style: none;
+    transition: all 0.3s ease;
+
+}
+
+li{
+    cursor: pointer;
+    background-color: rgba(128, 128, 128, 0.513);
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin:10px 0px;
+    transition: all 0.5s ease;
+    font-size: large;
+
+}
+ul li:nth-child(1){
+    background-color: rgba(255, 255, 255, 0.603);
+    color: #000000;
+    transition: all 0.3s ease;
+
+}
+.logo h2{
+    margin-left: 10px;
+    margin-top: 10px;
+    padding: 5px 20px;
+    background-color: rgb(147, 232, 245);
+    border-radius: 10px;
+    color:rgba(0, 0, 0, 0.683);
+    font-style: italic;
+}
+li:hover{
+    background-color: rgba(255, 255, 255, 0.64);
+    color: black;
+    box-shadow: -2px 2px 20px white;
+    transform: scale(1.15);
+    text-shadow: -1.5px 2.5px 5px rgb(236, 230, 230);
+
+}
+li:nth-child(1):hover{
+    background-color: rgba(128, 128, 128, 0.513);
+    color: white;
+    text-shadow: 0px 2.5px 5px rgb(0, 0, 0);
+
+
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.left-sticky{
+    background-color: rgb(115, 87, 87);
+
+    
+}
+.middle-area{
+    background-color: grey;
+}
+.right-sticky{
+
+    background-color: grey;
+}
+
+@media screen and (max-width: 992px) {
+    ul{
+        gap: 15px;
+    }
+    li{
+        padding: 10px;
+        font-size: medium;
+    }
+
+  }
+  
+  @media screen and (max-width: 600px) {
+    li{
+        padding: 10px;
+        font-size: small;
+    }
+    ul{
+        gap:10px;
+    }
+
+  }
+@media screen and (max-width:300px) {
+    li{
+        padding: 2px;
+    }
+    ul{
+        gap:1px;
+    }
+} 
+
+
