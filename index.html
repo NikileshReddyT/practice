@@ -3,17 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>manasvi</title>
+    <title>learning</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <div class="header">
       <div class="logo">
-        <h2>logo</h2>
+        <img id="kllogo" src="./images/kl-logo.svg" alt="">
       </div>
-
+      <div class="text">
+        <input id="text" type="text">
+        <button id="search-button">Search</button>
+      </div>
+      <button id="togglemenu" onclick="togglemenu()">☰</button>
       <div class="elements">
-        <ul>
+        <ul class="elements-ul">
           <li>Home</li>
           <li>Features</li>
           <li>Pricing</li>
@@ -22,5 +26,12 @@
         </ul>
       </div>
     </div>
+    <script>
+      function togglemenu(){
+        let menu = document.querySelector(".elements-ul");
+        menu.classList.toggle("show");
+
+      }
+    </script>
   </body>
 </html>
